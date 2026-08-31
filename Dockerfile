@@ -1,1 +1,1 @@
-FROM earnfm/earnfm-client:last
+FROM earnfm/earnfm-client:latest
