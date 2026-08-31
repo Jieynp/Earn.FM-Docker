@@ -1,0 +1,8 @@
+services:
+  earnfm-client:
+    container_name: earnfm-docker
+    build:
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      EARNFM_TOKEN: ${EARNFM_TOKEN}
