@@ -1,8 +1,10 @@
 services:
   earnfm-client:
     container_name: earnfm-docker
-    build:
-      dockerfile: Dockerfile
+    build: .
+    image: earnfm-client:latest
     restart: always
+    ports:
+      - "8080:8080"
     environment:
       EARNFM_TOKEN: ${EARNFM_TOKEN}
